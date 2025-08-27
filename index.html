@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Nourished Bite - Healthy recipes, nutritious pastries, and wholesome cooking by Tamika Datson. Kitchen-inspired food blog with delicious, accessible recipes.">
+    <meta name="keywords" content="healthy recipes, nutritious pastries, wholesome cooking, food blog, Tamika Datson, kitchen recipes">
+    <meta name="author" content="Tamika Datson">
+    <title>The Nourished Bite - Healthy Recipes & Wholesome Cooking</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Georgia:wght@400;600;700&family=Arial:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="./index.html" class="brand-link">
+                    <i class="fas fa-utensils brand-icon" aria-hidden="true"></i>
+                    <span class="brand-text">The Nourished Bite</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="./index.html" class="nav-link active" role="menuitem" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="./about.html" class="nav-link" role="menuitem">About Me</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="./recipes.html" class="nav-link" role="menuitem">Recipes</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="./media.html" class="nav-link" role="menuitem">Media</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="./contact.html" class="nav-link" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="main-content">
+        <div class="hero-video-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="videos/3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-center">
+                <p class="hero-category">HEALTHY RECIPES + NUTRITION</p>
+                <h1 class="hero-title">The Nourished Bite</h1>
+                <a href="recipes.html" class="btn btn-cta">EXPLORE RECIPES</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section about-preview">
+        <div class="container">
+            <div class="about-preview-content">
+                <div class="about-text">
+                    <h2>Hi, I'm Tamika</h2>
+                    <p>Welcome to my kitchen! I'm passionate about creating healthy, delicious recipes that prove nutritious eating doesn't mean sacrificing flavor. From wholesome pastries to nourishing meals, every recipe is crafted with love and designed to make healthy cooking accessible to everyone.</p>
+                    <p>My philosophy is simple: good food should make you feel good, inside and out. Join me on this journey of discovering the joy in nutritious cooking!</p>
+                    <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Healthy Recipes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Instagram Followers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Media Features</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes Carousel -->
+    <section class="section featured-recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Recipes</h2>
+                <p>Discover some of my most popular and beloved recipes</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="recipe-carousel">
+                        <!-- Recipe Card 1 -->
+                        <div class="recipe-card featured">
+                            <div class="recipe-image-container">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop&crop=center&q=80" alt="Milky Way Slice" class="recipe-image">
+                                <div class="recipe-overlay">
+                                    <a href="https://www.instagram.com/reel/DNePaKqTR1G/" target="_blank" class="video-link">
+                                        <i class="fab fa-instagram"></i> Watch Recipe
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Milky Way Slice 💫</h3>
+                                <p class="recipe-description">Decadent layers of almond base, creamy caramel, and rich chocolate coating</p>
+                                <div class="recipe-tags">
+                                    <span class="tag dietary">GF</span>
+                                    <span class="tag dietary">DF</span>
+                                    <span class="tag difficulty">Easy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 2 -->
+                        <div class="recipe-card featured">
+                            <div class="recipe-image-container">
+                                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300&h=200&fit=crop&crop=center&q=80" alt="Salted Caramel Banana Truffles" class="recipe-image">
+                                <div class="recipe-overlay">
+                                    <a href="https://www.instagram.com/reel/DM7J8mhz1NB/" target="_blank" class="video-link">
+                                        <i class="fab fa-instagram"></i> Watch Recipe
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Salted Caramel Banana Truffles 🍌</h3>
+                                <p class="recipe-description">Protein-packed truffles with banana, almond butter, and chocolate coating</p>
+                                <div class="recipe-tags">
+                                    <span class="tag dietary">Protein</span>
+                                    <span class="tag dietary">GF</span>
+                                    <span class="tag difficulty">Easy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 3 -->
+                        <div class="recipe-card featured">
+                            <div class="recipe-image-container">
+                                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&h=200&fit=crop&crop=center&q=80" alt="Chocolate Kiwi Clusters" class="recipe-image">
+                                <div class="recipe-overlay">
+                                    <a href="https://www.instagram.com/reel/DLHPwBlTxXu/" target="_blank" class="video-link">
+                                        <i class="fab fa-instagram"></i> Watch Recipe
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Chocolate, Kiwi, Honey & Yoghurt Clusters 🥝🍯</h3>
+                                <p class="recipe-description">Fresh kiwi and yogurt clusters coated in dark chocolate</p>
+                                <div class="recipe-tags">
+                                    <span class="tag dietary">Fresh</span>
+                                    <span class="tag dietary">Probiotic</span>
+                                    <span class="tag difficulty">Easy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 4 -->
+                        <div class="recipe-card featured">
+                            <div class="recipe-image-container">
+                                <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=300&h=200&fit=crop&crop=center&q=80" alt="Fudgy Tahini Brownies" class="recipe-image">
+                                <div class="recipe-overlay">
+                                    <a href="https://www.instagram.com/reel/DKZIe69TjjR/" target="_blank" class="video-link">
+                                        <i class="fab fa-instagram"></i> Watch Recipe
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Fudgy Tahini Brownies 🤎</h3>
+                                <p class="recipe-description">Rich, fudgy brownies made with tahini and cacao powder</p>
+                                <div class="recipe-tags">
+                                    <span class="tag dietary">GF</span>
+                                    <span class="tag dietary">Protein</span>
+                                    <span class="tag difficulty">Medium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev-btn" aria-label="Previous recipe">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next-btn" aria-label="Next recipe">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                    <button class="indicator" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts -->
+    <section class="section recent-posts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Recipes</h2>
+                <p>Fresh from the kitchen - my newest healthy creations</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <!-- Blog Post 1 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=300&h=200&fit=crop&crop=center&q=80" alt="Gut Loving Chia Seed Pudding" class="recipe-image">
+                        <div class="recipe-overlay">
+                            <a href="https://www.instagram.com/reel/DJyWDHxzjJU/" target="_blank" class="video-link">
+                                <i class="fab fa-instagram"></i> Watch Recipe
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Gut Loving Chia Seed Pudding 🫐</h3>
+                        <p class="recipe-description">Protein-packed breakfast pudding with vanilla and coconut</p>
+                        <div class="recipe-tags">
+                            <span class="tag dietary">Protein</span>
+                            <span class="tag dietary">GF</span>
+                            <span class="tag">Breakfast</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=300&h=200&fit=crop&crop=center&q=80" alt="Sunday Morning Pancakes" class="recipe-image">
+                        <div class="recipe-overlay">
+                            <a href="https://www.instagram.com/reel/DIYJmzizqSA/" target="_blank" class="video-link">
+                                <i class="fab fa-instagram"></i> Watch Recipe
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Sunday Morning Pancakes 🥞</h3>
+                        <p class="recipe-description">Fluffy buckwheat pancakes with cacao and banana</p>
+                        <div class="recipe-tags">
+                            <span class="tag dietary">GF</span>
+                            <span class="tag">Breakfast</span>
+                            <span class="tag difficulty">Easy</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=300&h=200&fit=crop&crop=center&q=80" alt="Viral Matcha Yogurt Bark" class="recipe-image">
+                        <div class="recipe-overlay">
+                            <a href="https://www.instagram.com/reel/DD3hwpCTUCJ/" target="_blank" class="video-link">
+                                <i class="fab fa-instagram"></i> Watch Recipe
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">The Viral Matcha Yogurt Bark 🍵🍓</h3>
+                        <p class="recipe-description">Instagram-famous frozen treat with matcha and strawberries</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Viral</span>
+                            <span class="tag dietary">Probiotic</span>
+                            <span class="tag difficulty">Easy</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="section-footer">
+                <a href="recipes.html" class="btn btn-primary">View All Recipes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="section instagram-feed">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow My Journey</h2>
+                <p>Get daily inspiration and behind-the-scenes content on Instagram</p>
+            </div>
+            
+            <div class="instagram-content">
+                <div class="instagram-info">
+                    <div class="instagram-profile">
+                        <div class="profile-image-container">
+                            <img src="images/Profile.jpg" alt="@thenourishedbite" class="instagram-profile-image">
+                        </div>
+                        <div class="profile-details">
+                            <h3>@thenourishedbite</h3>
+                            <p>50K+ followers sharing the love for healthy cooking</p>
+                            <a href="https://www.instagram.com/thenourishedbite" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-instagram"></i> Follow on Instagram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="instagram-highlights">
+                        <h4>What you'll find:</h4>
+                        <ul>
+                            <li>🍰 Daily recipe inspiration</li>
+                            <li>🎥 Step-by-step cooking videos</li>
+                            <li>🌱 Healthy lifestyle tips</li>
+                            <li>📸 Behind-the-scenes kitchen moments</li>
+                            <li>💬 Community of food lovers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="instagram-grid">
+                    <!-- Instagram Post Previews -->
+                    <div class="instagram-post">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&h=200&fit=crop&crop=center&q=80" alt="Instagram post">
+                        <div class="post-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-post">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200&h=200&fit=crop&crop=center&q=80" alt="Instagram post">
+                        <div class="post-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-post">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=200&h=200&fit=crop&crop=center&q=80" alt="Instagram post">
+                        <div class="post-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-post">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&h=200&fit=crop&crop=center&q=80" alt="Instagram post">
+                        <div class="post-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter/Social CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Stay Connected</h2>
+                <p>Join our community of food lovers and never miss a delicious recipe!</p>
+                <div class="cta-buttons">
+                    <a href="https://www.instagram.com/thenourishedbite" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-instagram"></i> Follow on Instagram
+                    </a>
+                    <a href="recipes.html" class="btn btn-secondary">Browse All Recipes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3 class="brand-name">The Nourished Bite</h3>
+                        <p class="brand-tagline">Nourishing bodies and souls, one recipe at a time.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Me</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./media.html">Media</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="./recipes.html#breakfast">Breakfast</a></li>
+                        <li><a href="./recipes.html#lunch">Lunch</a></li>
+                        <li><a href="./recipes.html#dinner">Dinner</a></li>
+                        <li><a href="./recipes.html#snacks">Snacks</a></li>
+                        <li><a href="./recipes.html#desserts">Desserts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/thenourishedbite" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@thenourishedbite" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 The Nourished Bite by Tamika Datson. All rights reserved.</p>
+                <div class="footer-credit">
+                    <a href="https://www.thefreewebsitewizards.com/" class="credit-link" target="_blank" rel="noopener noreferrer">Built by The Free Website Wizards</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
