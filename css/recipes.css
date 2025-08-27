@@ -416,7 +416,7 @@
 
 .badge.gluten-free {
     background: rgba(255, 193, 7, 0.9);
-    color: var(--dark-brown);
+    color: white;
 }
 
 .badge.dairy-free {
@@ -606,7 +606,8 @@
 }
 
 .recipe-grid.list-view .recipe-image {
-    height: 150px;
+    height: 100%;
+    min-height: 120px;
 }
 
 .recipe-grid.list-view .recipe-card-content {

@@ -185,6 +185,7 @@ function setupEventListeners() {
     // Featured recipe buttons
     const featuredPrintBtn = document.querySelector('.featured-recipe-section .print-btn');
     const featuredViewBtn = document.querySelector('.featured-recipe-section .view-recipe-btn');
+    const featuredFavoriteBtn = document.querySelector('.featured-recipe-section .favorite-btn');
     
     if (featuredPrintBtn) {
         featuredPrintBtn.addEventListener('click', function() {
@@ -199,6 +200,15 @@ function setupEventListeners() {
             // Get the featured recipe (first recipe in database)
             const featuredRecipe = recipeDatabase.find(r => r.featured === true) || recipeDatabase[0];
             showRecipeDetails(featuredRecipe);
+        });
+    }
+    
+    if (featuredFavoriteBtn) {
+        featuredFavoriteBtn.addEventListener('click', function() {
+            const recipeId = featuredFavoriteBtn.getAttribute('data-recipe-id');
+            if (recipeId) {
+                toggleFavorite(parseInt(recipeId), featuredFavoriteBtn);
+            }
         });
     }
     
@@ -1053,6 +1063,19 @@ function initializeFavorites() {
             }
         }
     });
+    
+    // Also handle the featured recipe favorite button
+    const featuredFavoriteBtn = document.querySelector('.featured-recipe-section .favorite-btn');
+    if (featuredFavoriteBtn) {
+        const recipeId = featuredFavoriteBtn.getAttribute('data-recipe-id');
+        if (recipeId && favorites.includes(parseInt(recipeId))) {
+            const icon = featuredFavoriteBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+            }
+        }
+    }
 }
 
 // URL hash handling
